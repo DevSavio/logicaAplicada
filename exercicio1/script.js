@@ -7,13 +7,10 @@ formular.addEventListener('submit', function(event){
     const lado1 = parseFloat(document.getElementById('lado1').value);
     const lado2 = parseFloat(document.getElementById('lado2').value);
 
-    if (verificaValores(lado1, lado2)) {
-        resultado.textContent = 'Por favor, verifique a inserção dos seus dados.';
-    } else {
-        const area = calcular(lado1, lado2);
-        result(area);
-    }
-
+    verificarValores(lado1, lado2)
+    
+    const area = calcular(lado1, lado2);
+    result(area);
 });
 
 verificarValores = function(valor1, valor2) {
