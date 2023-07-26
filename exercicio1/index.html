@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGORITMOS E TÉCNICAS DE PROGRAMAÇÃO</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .container {
+            height: 100%;
+        }
+    
+        .conteudo {
+            font-size: larger;
+            background-color: white;
+        }
+
+        .results{
+            background-color: red; 
+            font-size: x-large; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo">
+            <h3 style="font-size: xx-large; color: blue; margin-top: 15%;" >Exercício 1</h3>
+            <br>
+            <form id="formular" method="post">
+                <label for="lado1">Largura do Terreno: </label>
+                <br>
+                <input id="lado1" type="number" style="font-size: larger;" required>
+                <br>
+                <br>
+                <label for="lado2">Comprimento do Terreno: </label>
+                <br>
+                <input id="lado2" type="number" style="font-size: larger;" required>
+                <br>
+                <br>
+                <input type="submit" style="color: white; background-color: blue; font-size: larger;" value="Calcular Área">
+            </form>
+            <br>
+            <br>
+        
+            <div class="results" id="resultado"></div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
