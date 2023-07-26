@@ -34,9 +34,9 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController comprimento = TextEditingController();
   double area = 0;
 
-  void calcularArea() {
-    double larg = double.tryParse(largura.text) ?? 0;
-    double compr = double.tryParse(comprimento.text) ?? 0;
+  calcularArea(String l, String c) {
+    double larg = double.tryParse(l) ?? 0;
+    double compr = double.tryParse(c) ?? 0;
 
     setState(() {
       area = larg * compr;
@@ -137,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 horizontal: 180.0,
               ),
               child: ElevatedButton(
-                onPressed: calcularArea,
+                onPressed: calcularArea(largura.text, comprimento.text),
                 child: Text(
                   'Calcular Área',
                   style: TextStyle(
