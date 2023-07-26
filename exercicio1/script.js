@@ -11,6 +11,7 @@ formular.addEventListener('submit', function(event){
         resultado.textContent = 'Por favor, verifique a inserção dos seus dados.';
     } else {
         const area = calcular(lado1, lado2);
+        result(area);
     }
 
 });
