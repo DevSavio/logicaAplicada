@@ -27,7 +27,7 @@ export class AppComponent {
         },
         {
           title: 'Exercício 2',
-          // link: 'produto/list',
+          link: 'exercicio2',
           //icon: 'shopping-cart-outline'
         },
         {

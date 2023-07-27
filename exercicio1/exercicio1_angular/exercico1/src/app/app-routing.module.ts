@@ -6,11 +6,10 @@ const routes: Routes = [
     path: 'exercicio1',
     component: Exercicio1ListComponent,
   },
-  // {
-  //   path: 'exercicio2',
-  //   loadChildren: () =>
-  //     import('').then((m) => ),
-  // },
+  {
+    path: 'exercicio2',
+    component: Exercicio2Component,
+  },
   // {
   //   path: 'exercicio3',
   //   loadChildren: () =>
