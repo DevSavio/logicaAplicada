@@ -18,7 +18,7 @@ import {
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list/exercicio1-list.component';
+import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 
 @NgModule({
   declarations: [AppComponent, Exercicio1ListComponent],

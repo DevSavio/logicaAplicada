@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list/exercicio1-list.component';
-
+import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
