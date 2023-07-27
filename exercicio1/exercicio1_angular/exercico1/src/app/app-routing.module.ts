@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Exercicio1Module } from './pages/exercicio1/exercicio1.module';
+import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list/exercicio1-list.component';
 
 const routes: Routes = [
   {
     path: 'exercicio1',
-    loadChildren: () =>
-      import('./pages/exercicio1/exercicio1.module').then(
-        (m) => Exercicio1Module
-      ),
+    component: Exercicio1ListComponent,
   },
   // {
   //   path: 'exercicio2',
