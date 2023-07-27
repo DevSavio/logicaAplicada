@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 import { Exercicio2Component } from './pages/exercicio2/exercicio2.component';
+import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
@@ -11,11 +12,10 @@ const routes: Routes = [
     path: 'exercicio2',
     component: Exercicio2Component,
   },
-  // {
-  //   path: 'exercicio3',
-  //   loadChildren: () =>
-  //     import('').then((m) => ),
-  // },
+  {
+    path: 'exercicio3',
+    component: Exercicio3Component,
+  },
   // {
   //   path: 'exercicio4',
   //   loadChildren: () =>

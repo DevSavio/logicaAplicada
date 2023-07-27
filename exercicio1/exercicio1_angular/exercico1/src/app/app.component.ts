@@ -32,7 +32,7 @@ export class AppComponent {
         },
         {
           title: 'Exercício 3',
-          // link: 'ponto_venda/list',
+          link: 'exercicio3',
           icon: 'hash-outline',
         },
         {
