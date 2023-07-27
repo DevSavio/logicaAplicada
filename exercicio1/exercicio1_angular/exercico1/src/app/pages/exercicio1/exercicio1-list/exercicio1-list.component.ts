@@ -19,6 +19,12 @@ export class Exercicio1ListComponent {
   }
 
   calcularArea() {
-    this.resultado = this.realizarMultiplicacao();
+    if (this.camposForamAlterados()) {
+      this.resultado = this.realizarMultiplicacao();
+    }
+  }
+
+  private camposForamAlterados(): boolean {
+    return this.largura !== undefined && this.comprimento !== undefined;
   }
 }
