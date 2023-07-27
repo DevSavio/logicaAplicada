@@ -10,17 +10,15 @@ export class Exercicio1ListComponent {
   comprimento!: number;
   resultado: number | null = null;
 
-  verificaValores(largura: number, comprimento: number) {
-    if (this.largura == undefined && this.comprimento == undefined) {
-      alert('Digite valores válidos para o calculo');
-    }
+  private camposSaoValidos(): boolean {
+    return this.largura !== undefined && this.comprimento !== undefined;
+  }
+
+  private realizarMultiplicacao(): number | null {
+    return this.camposSaoValidos() ? this.largura * this.comprimento : null;
   }
 
   calcularArea() {
-    if (this.largura !== undefined && this.comprimento !== undefined) {
-      this.resultado = this.largura * this.comprimento;
-    } else {
-      this.resultado = null;
-    }
+    this.resultado = this.realizarMultiplicacao();
   }
 }
