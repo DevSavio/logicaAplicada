@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
+import { Exercicio2Component } from './pages/exercicio2/exercicio2.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
