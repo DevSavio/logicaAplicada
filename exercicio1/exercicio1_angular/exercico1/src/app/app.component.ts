@@ -18,7 +18,6 @@ export class AppComponent {
   items: NbMenuItem[] = [
     {
       title: 'Lógica',
-      // link: 'person-add-outline',
       icon: 'book-open-outline',
       children: [
         {
