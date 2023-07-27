@@ -26,5 +26,9 @@ export class Exercicio2Component {
   private camposForamAlterados(): boolean {
     return this.cavalos !== undefined;
   }
+
+  limpar() {
+    this.resultado = null;
+    this.cavalos = 0;
   }
 }
