@@ -22,7 +22,7 @@ export class AppComponent {
       children: [
         {
           title: 'Exercício 1',
-          // link: 'local_estoque/list',
+          link: 'exercicio1',
           //icon: 'shopping-bag-outline',
         },
         {
