@@ -8,6 +8,7 @@ import {
   NbButtonModule,
   NbCardModule,
   NbIconModule,
+  NbInputModule,
   NbLayoutModule,
   NbMenuModule,
   NbMenuService,
@@ -15,12 +16,17 @@ import {
   NbThemeModule,
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list/exercicio1-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, Exercicio1ListComponent],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NbThemeModule.forRoot(),
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
@@ -30,6 +36,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbEvaIconsModule,
     BrowserAnimationsModule,
     NbButtonModule,
+    NbInputModule,
   ],
   providers: [NbMenuService],
   bootstrap: [AppComponent],
