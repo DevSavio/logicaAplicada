@@ -1,0 +1,14 @@
+<nb-layout>
+    <nb-layout-header fixed>
+        <a href="#" (click)="toggle()"><i class="nb-menu"></i></a>
+        <div  style="justify-content: center"><p style="font-size: larger; font-weight: 700;">Atividade para garantir o aprendizado na lógica em Angular</p></div>
+    </nb-layout-header>
+
+    <nb-sidebar>
+        <nb-menu tag="menu" [items]="items" autoCollapse="true"></nb-menu>
+    </nb-sidebar>
+
+    <nb-layout-column class="colored-column-basic">
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+</nb-layout>

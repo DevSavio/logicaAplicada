@@ -7,11 +7,18 @@ formular.addEventListener('submit', function(event){
     const lado1 = parseFloat(document.getElementById('lado1').value);
     const lado2 = parseFloat(document.getElementById('lado2').value);
 
-    verificarValores(lado1, lado2)
+    // converterValores(lado1, lado2);
+
+    verificarValores(lado1, lado2);
     
     const area = calcular(lado1, lado2);
     result(area);
 });
+
+// converterValores = function(a1, a2) {
+//     const a1 = parseFloat(lado1);
+//     const a2 = parseFloat(lado2);
+// }
 
 verificarValores = function(valor1, valor2) {
     if (isNaN(valor1) || isNaN(valor2) || valor1 <= 0 || valor2 <= 0) {
