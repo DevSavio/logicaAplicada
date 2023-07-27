@@ -1,4 +1,4 @@
-:host nb-layout-header nb-user:last-child {
+:host nb-layout-header:last-child {
     margin-left: auto;
 }
 
@@ -17,6 +17,6 @@
     }
 }
 
-:host nb-layout-header nb-user:last-child {
+:host nb-layout-header:last-child {
     margin-left: auto;
 }
