@@ -16,30 +16,30 @@ export class Exercicio3Component {
     return this.pao !== undefined && this.broa !== undefined;
   }
 
-  private realizarMultiplicacaoA(): number | null {
+  private realizarMultiplicacaoA(
+    pao: number,
+    pao_de_queijo: number,
+    broa: number
+  ): number | null {
     return this.camposSaoValidos()
-      ? this.pao * 0.35 && this.pao_de_queijo * 0.8 && this.broa * 1.5
+      ? pao * 0.35 && pao_de_queijo * 0.8 && broa * 1.5
       : null;
   }
 
   calcularArrecadacao() {
-    if (this.camposForamAlterados()) {
-      this.resultadoA = this.realizarMultiplicacaoA();
-    }
+    this.resultadoA = this.realizarMultiplicacaoA(
+      this.pao,
+      this.pao_de_queijo,
+      this.broa
+    );
   }
 
-  private realizarMultiplicacaoI(): number | null {
-    return (this.resultadoI = this.resultadoA! * 0.1);
+  private realizarMultiplicacaoI(resultadoA: number): number | null {
+    return (this.resultadoI = resultadoA! * 0.1);
   }
 
-  calcularInvestimento() {
-    if (this.camposForamAlterados()) {
-      this.resultadoI = this.realizarMultiplicacaoI();
-    }
-  }
-
-  private camposForamAlterados(): boolean {
-    return this.pao !== undefined && this.broa !== undefined;
+  calcularInvestimento(resultadoA: number) {
+    this.resultadoI = this.realizarMultiplicacaoI(resultadoA);
   }
 
   limpar() {
