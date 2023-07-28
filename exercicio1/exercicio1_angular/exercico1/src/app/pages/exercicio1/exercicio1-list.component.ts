@@ -10,21 +10,20 @@ export class Exercicio1ListComponent {
   comprimento!: number;
   resultado: number | null = null;
 
-  private camposSaoValidos(): boolean {
-    return this.largura !== undefined && this.comprimento !== undefined;
+  private camposSaoValidos(largura: number, comprimento: number): boolean {
+    return largura !== undefined && comprimento !== undefined;
   }
 
-  private realizarMultiplicacao(): number | null {
-    return this.camposSaoValidos() ? this.largura * this.comprimento : null;
+  private realizarMultiplicacao(
+    largura: number,
+    comprimento: number
+  ): number | null {
+    return this.camposSaoValidos(largura, comprimento)
+      ? largura * comprimento
+      : null;
   }
 
   calcularArea() {
-    if (this.camposForamAlterados()) {
-      this.resultado = this.realizarMultiplicacao();
-    }
-  }
-
-  private camposForamAlterados(): boolean {
-    return this.largura !== undefined && this.comprimento !== undefined;
+    this.resultado = this.realizarMultiplicacao(this.largura, this.comprimento);
   }
 }
