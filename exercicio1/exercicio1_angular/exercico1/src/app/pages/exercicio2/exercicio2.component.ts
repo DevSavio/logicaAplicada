@@ -10,25 +10,19 @@ export class Exercicio2Component {
   resultado: number | null = null;
 
   private camposSaoValidos(): boolean {
-    return this.cavalos !== undefined;
+    return this.qtde_cavalos !== undefined;
   }
 
-  private realizarMultiplicacao(): number | null {
-    return this.camposSaoValidos() ? this.cavalos * 4 : null;
+  private realizarMultiplicacao(qtde_cavalos: number): number | null {
+    return this.camposSaoValidos() ? qtde_cavalos * 4 : null;
   }
 
   calcularFerraduras() {
-    if (this.camposForamAlterados()) {
-      this.resultado = this.realizarMultiplicacao();
-    }
-  }
-
-  private camposForamAlterados(): boolean {
-    return this.cavalos !== undefined;
+    this.resultado = this.realizarMultiplicacao(this.qtde_cavalos);
   }
 
   limpar() {
     this.resultado = null;
-    this.cavalos = 0;
+    this.qtde_cavalos = 0;
   }
 }
