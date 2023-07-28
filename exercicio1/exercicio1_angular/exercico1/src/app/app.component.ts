@@ -37,7 +37,7 @@ export class AppComponent {
         },
         {
           title: 'Exercício 4',
-          // link: 'familia_produto/list',
+          // link: 'exercicio4',
           icon: 'hash-outline',
         },
         {

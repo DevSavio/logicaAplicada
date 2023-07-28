@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 import { Exercicio2Component } from './pages/exercicio2/exercicio2.component';
 import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
+// import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
@@ -18,8 +19,7 @@ const routes: Routes = [
   },
   // {
   //   path: 'exercicio4',
-  //   loadChildren: () =>
-  //     import('').then((m) => ),
+  //   component: Exercicio4Component,
   // },
   // {
   //   path: 'exercicio5',

@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 import { Exercicio2Component } from './pages/exercicio2/exercicio2.component';
 import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
+// import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
     Exercicio1ListComponent,
     Exercicio2Component,
     Exercicio3Component,
+    // Exercicio4Component,
   ],
   imports: [
     CommonModule,
