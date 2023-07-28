@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./exercicio2.component.css'],
 })
 export class Exercicio2Component {
-  cavalos!: number;
+  qtde_cavalos!: number;
   resultado: number | null = null;
 
   private camposSaoValidos(): boolean {
