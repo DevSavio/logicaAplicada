@@ -9,8 +9,8 @@ export class Exercicio3Component {
   pao!: number;
   pao_de_queijo!: number;
   broa!: number;
-  resultadoA: number | null = null;
-  resultadoI: number | null = null;
+  resultadoA!: number | null;
+  resultadoI!: number | null;
 
   private camposSaoValidos(): boolean {
     return this.pao !== undefined && this.broa !== undefined;
@@ -38,8 +38,8 @@ export class Exercicio3Component {
     return (this.resultadoI = resultadoA! * 0.1);
   }
 
-  calcularInvestimento(resultadoA: number) {
-    this.resultadoI = this.realizarMultiplicacaoI(resultadoA);
+  calcularInvestimento() {
+    this.resultadoI = this.realizarMultiplicacaoI(this.resultadoA!);
   }
 
   limpar() {
