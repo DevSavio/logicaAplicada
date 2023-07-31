@@ -1,6 +1,6 @@
 <nb-card>
     <nb-card-header style="display: flex; justify-content: center;">
-        <p style="font-size: large; font-weight: 600; color: blue;">Exercício 3</p>
+        <p style="font-size: x-large; font-weight: 600; color: blue;">Exercício 3</p>
     </nb-card-header>
     <nb-card-body>
         <p style="display: flex; justify-content: center; font-size: large; font-weight: 600; color: rgb(156, 15, 17); justify-self: center;">
@@ -29,13 +29,13 @@
 
     <div style="display: flex; justify-content: center " *ngIf="resultadoA !== null">
         <button nbButton status="basic"(click)="limpar()">
-            <p style="font-size: x-large; font-weight: 600; color: red;">Resultado: R$: {{ resultadoA }} Faturado no dia de hoje.</p>
+            <p style="font-size: x-large; font-weight: 600; color: red;">Resultado: R$: {{ resultadoA.toFixed(2) }} Faturado no dia de hoje.</p>
         </button>
     </div>
     <br>
     <div style="display: flex; justify-content: center; color: yellow; " *ngIf="resultadoI !== null">
         <button nbButton status="basic"(click)="limparI()">
-            <p style="font-size: x-large; font-weight: 600; color: BLUE;">Resultado: R$: {{ resultadoI }} A ser Investido.</p>
+            <p style="font-size: x-large; font-weight: 600; color: BLUE;">Resultado: R$: {{ resultadoI.toFixed(2) }} A ser Investido.</p>
         </button>
     </div>
 

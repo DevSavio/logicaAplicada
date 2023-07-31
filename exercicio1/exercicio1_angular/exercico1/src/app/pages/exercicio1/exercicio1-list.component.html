@@ -22,7 +22,7 @@
 
         <div style="display: flex; justify-content: center " *ngIf="resultado !== null">
             <button nbButton status="danger" style="color: red;">
-                <p style="font-size: xx-large; font-weight: 600; color: white;">Resultado: {{ resultado }} m².</p>
+                <p style="font-size: xx-large; font-weight: 600; color: white;">Resultado: {{ resultado.toFixed(2) }} m².</p>
             </button>
         </div>
     </nb-card-body>
