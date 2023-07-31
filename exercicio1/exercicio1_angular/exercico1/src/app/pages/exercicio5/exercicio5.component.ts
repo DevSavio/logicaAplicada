@@ -19,7 +19,7 @@ export class Exercicio5Component {
   }
 
   calcularLitros() {
-    this.realizarCalculo(this.valor!, this.combustivel!);
+    this.totalLitros = this.realizarCalculo(this.valor!, this.combustivel!);
   }
 
   limpar() {

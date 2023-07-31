@@ -1,22 +1,19 @@
-<p>exercicio5 works!</p>
-
-
 <nb-card>
     <nb-card-header style="display: flex; justify-content: center;">
         <p style="font-size: large; font-weight: 600; color: blue;">Exercício 5</p>
     </nb-card-header>
     <nb-card-body>
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="nome">Valor a ser Abastecido:</label>
+            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="valor">Valor a ser Abastecido:</label>
             <br>
-            <input id="pao" type="number" nbInput status="basic"  placeholder="Primeiro NOME" [(ngModel)]="valor">
+            <input id="valor" type="number" nbInput status="basic"  placeholder="Valor que deseja Abastecer:" [(ngModel)]="valor">
             <br>
             <br>
-            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="nascimento" >Valor do litro do Combustível:</label>
+            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="combustivel" >Valor do litro do Combustível:</label>
             <br>
-            <input id="nascimento" type="number" status="info" nbInput placeholder="Exemplo: 25-12-1986" [(ngModel)]="combustivel">
+            <input id="combustivel" type="number" status="info" nbInput placeholder="Valor do combustível:" [(ngModel)]="combustivel">
             <br><br><br>
-        <button style="font-size: x-large; font-weight: 700;" nbButton status="primary" type="button" (click)="calcularLitros()">Calcular DIAS VIVIDOS</button>
+        <button style="font-size: x-large; font-weight: 700;" nbButton status="primary" type="button" (click)="calcularLitros()">Calcular LITRAGEM</button>
         <br>
         <br>
     </div>
@@ -25,7 +22,7 @@
 
     <div style="display: flex; justify-content: center " *ngIf="totalLitros !== null">
         <button nbButton status="basic"(click)="limpar()">
-            <p style="font-size: x-large; font-weight: 600; color: red;">Total de dias desde o aniversário: {{ totalLitros }} dias.</p>
+            <p style="font-size: x-large; font-weight: 600; color: red;">Total de litros abastecidos foi: {{ totalLitros | number: '1.2-2'  }} litros.</p>
         </button>
     </div>
 
