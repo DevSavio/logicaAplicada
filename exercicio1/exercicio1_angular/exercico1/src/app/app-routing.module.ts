@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Exercicio1ListComponent } from './pages/exercicio1/exercicio1-list.component';
 import { Exercicio2Component } from './pages/exercicio2/exercicio2.component';
 import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
-// import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
+import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
+import { Exercicio5Component } from './pages/exercicio5/exercicio5.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
@@ -17,15 +18,14 @@ const routes: Routes = [
     path: 'exercicio3',
     component: Exercicio3Component,
   },
-  // {
-  //   path: 'exercicio4',
-  //   component: Exercicio4Component,
-  // },
-  // {
-  //   path: 'exercicio5',
-  //   loadChildren: () =>
-  //     import('').then((m) => ),
-  // },
+  {
+    path: 'exercicio4',
+    component: Exercicio4Component,
+  },
+  {
+    path: 'exercicio5',
+    component: Exercicio5Component,
+  },
   // {
   //   path: 'exercicio6',
   //   loadChildren: () =>
