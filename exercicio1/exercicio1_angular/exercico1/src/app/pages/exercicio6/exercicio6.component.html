@@ -1,4 +1,36 @@
 <nb-card>
-    <nb-card-header></nb-card-header>
-    <nb-card-body></nb-card-body>
+    <nb-card-header style="display: flex; justify-content: center;">
+        <p style="font-size: x-large; font-weight: 600; color: darkblue;">Exercício 6</p>
+    </nb-card-header>
+    <nb-card-body>
+        <div style="display: flex; justify-content: center;">
+            <p style="font-size: xx-large; font-weight: 800; color: crimson;">RESTAURANTE BEM BÃO</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <label style="font-size: large; font-weight: 600; color: black; justify-self: center;" for="prato">Tara do Prato:</label>
+            <br>
+            <input style="font-size: large; font-weight: 600; color: black;" type="number" nbInput status="basic" [(ngModel)]="prato" disabled="true">
+            <br>
+            <label style="font-size: large; font-weight: 600; color: black; justify-self: center;" for="kilo">Valor do Kilo:</label>
+            <br>
+            <input style="font-size: large; font-weight: 600; color: black;" id="kilo" type="number" nbInput status="basic" [(ngModel)]="kilo" disabled="true">
+            <br>
+            <label style="font-size: large; font-weight: 600; color: black; justify-self: center;" for="peso">Peso do Prato:</label>
+            <br>
+            <input id="peso" style="font-size: large; font-weight: 600; color: black;" type="number" nbInput status="basic" [(ngModel)]="peso" disabled="true">
+            <br>
+            <br>
+            <button style="font-size: x-large; font-weight: 700;" nbButton status="primary" type="button" (click)="calcularKilo()">Calcular o Peso do Prato</button>
+            
+        </div>
+
+        <br>
+        <br>
+    
+        <div style="display: flex; justify-content: center " *ngIf="totalComanda!== null">
+            <button nbButton status="basic"(click)="limpar()">
+                <p style="font-size: xx-large; font-weight: 800; color: red;">Total de sua refeição foi R$: {{ totalComanda| number: '1.2-2'  }} reais.</p>
+            </button>
+        </div>
+    </nb-card-body>
 </nb-card>
