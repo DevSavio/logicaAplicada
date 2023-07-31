@@ -52,7 +52,7 @@ export class AppComponent {
         },
         {
           title: 'Exercício 7',
-          // link: 'fornecedor/list',
+          link: 'exercicio7',
           icon: 'hash-outline',
         },
         {

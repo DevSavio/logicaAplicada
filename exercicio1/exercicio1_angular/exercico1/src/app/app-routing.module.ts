@@ -6,6 +6,7 @@ import { Exercicio3Component } from './pages/exercicio3/exercicio3.component';
 import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
 import { Exercicio5Component } from './pages/exercicio5/exercicio5.component';
 import { Exercicio6Component } from './pages/exercicio6/exercicio6.component';
+import { Exercicio7Component } from './pages/exercicio7/exercicio7.component';
 const routes: Routes = [
   {
     path: 'exercicio1',
@@ -31,11 +32,10 @@ const routes: Routes = [
     path: 'exercicio6',
     component: Exercicio6Component,
   },
-  // {
-  //   path: 'exercicio7',
-  //   loadChildren: () =>
-  //     import('').then((m) => ),
-  // },
+  {
+    path: 'exercicio7',
+    component: Exercicio7Component,
+  },
   // {
   //   path: 'exercicio8',
   //   loadChildren: () =>
