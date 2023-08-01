@@ -10,14 +10,22 @@
             <br>
             <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="media2">MÉDIA 2: </label>
             <br>
-            <input id="media2" type="number" nbInput status="basic" placeholder="Exemplo: 20,0" [(ngModel)]="media2">
+            <input id="media2" type="number" nbInput status="basic" placeholder="Exemplo: 10,0" [(ngModel)]="media2">
             <br>
             <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="media3">MÉDIA 3: </label>
             <br>
-            <input id="media3" type="number" nbInput status="basic" placeholder="Exemplo: 30,0" [(ngModel)]="media3">
+            <input id="media3" type="number" nbInput status="basic" placeholder="Exemplo: 10,0" [(ngModel)]="media3">
             <br><br>
             <button nbButton status="primary" type="button" (click)="calcularMediaPonderada()" style="font-size: large; font-weight: 600; color: whitesmoke;">Calcular MÉDIAS</button>
             <br>
+        </div>
+        <br>
+        <br>
+
+        <div style="display: flex; justify-content: center " *ngIf="mediaPonderada !== null">
+            <button nbButton status="basic"(click)="limpar()">
+                <p style="font-size: xx-large; font-weight: 600; color: red;">Resultado: A média global do aluno ficou em: {{ mediaPonderada.toFixed(1) }}.</p>
+            </button>
         </div>
     </nb-card-body>
 </nb-card>
