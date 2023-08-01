@@ -26,6 +26,7 @@ import { Exercicio4Component } from './pages/exercicio4/exercicio4.component';
 import { Exercicio5Component } from './pages/exercicio5/exercicio5.component';
 import { Exercicio6Component } from './pages/exercicio6/exercicio6.component';
 import { Exercicio7Component } from './pages/exercicio7/exercicio7.component';
+import { Exercicio8Component } from './pages/exercicio8/exercicio8.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { Exercicio7Component } from './pages/exercicio7/exercicio7.component';
     Exercicio5Component,
     Exercicio6Component,
     Exercicio7Component,
+    Exercicio8Component,
   ],
   imports: [
     CommonModule,

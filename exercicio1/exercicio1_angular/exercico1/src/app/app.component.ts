@@ -57,7 +57,7 @@ export class AppComponent {
         },
         {
           title: 'Exercício 8',
-          // link: 'unidade_medida/list',
+          link: 'exercicio8',
           icon: 'hash-outline',
         },
         {

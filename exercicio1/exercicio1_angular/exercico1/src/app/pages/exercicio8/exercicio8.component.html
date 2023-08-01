@@ -1,0 +1,23 @@
+<nb-card>
+    <nb-card-header style="display: flex; justify-content: center;">
+        <p style="font-size: x-large; font-weight: 600; color: blue;">Exercício 8</p>
+    </nb-card-header>
+    <nb-card-body>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="media1">MÉDIA 1: </label>
+            <br>
+            <input id="media1" type="number" nbInput status="basic" placeholder="Exemplo: 10,0" [(ngModel)]="media1">
+            <br>
+            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="media2">MÉDIA 2: </label>
+            <br>
+            <input id="media2" type="number" nbInput status="basic" placeholder="Exemplo: 20,0" [(ngModel)]="media2">
+            <br>
+            <label style="font-size: large; font-weight: 600; color: rgb(35, 2, 136); justify-self: center;" for="media3">MÉDIA 3: </label>
+            <br>
+            <input id="media3" type="number" nbInput status="basic" placeholder="Exemplo: 30,0" [(ngModel)]="media3">
+            <br><br>
+            <button nbButton status="primary" type="button" (click)="calcularMediaPonderada()" style="font-size: large; font-weight: 600; color: whitesmoke;">Calcular MÉDIAS</button>
+            <br>
+        </div>
+    </nb-card-body>
+</nb-card>
