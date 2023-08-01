@@ -1,1 +1,72 @@
-<p>exercicio7 works!</p>
+<!-- <nb-card>
+    <nb-card-header style="display: flex; justify-content: center;">
+        <p style="font-size: x-large; font-weight: 600; color: darkblue;">Exercício 7</p>
+    </nb-card-header>
+    <nb-card-body style="display: flex; flex-direction: column; justify-content: center;">
+        <p style="display: flex; justify-content: center; font-size: large; font-weight: 600; color: darkblue;">Calcular dias passados desde o início deste ano</p>
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; ">
+            <div>
+                <label style="font-size: large; font-weight: 600; justify-self: center;" for="dia">Dia: </label>
+                <br>
+                <input id="dia" status="info" nbInput mediumWidth type="number" min="1" max="31" [(ngModel)]="dia" required>
+            </div>
+            <br>
+            <div>
+                <label style="font-size: large; font-weight: 600; justify-self: center;" for="mes" >Mês:</label>
+                <br>
+                <input id="mes" status="info" nbInput type="number" min="1" max="12" [(ngModel)]="mes" required>
+            </div>
+            <br>
+            <div>
+                <label style="font-size: large; font-weight: 600; justify-self: center;" for="ano" >Ano:</label>
+                <br>
+                <input id="ano" status="info" nbInput type="number" min="1923" max="2993" [(ngModel)]="ano" required>
+                <br>
+            </div>
+        <br>
+    </div>
+    <br>
+    <div style="display: flex; flex-direction: column; justify-content: center;">
+        <button style="font-size: x-large; font-weight: 700;" nbButton status="primary" type="button" (click)="calcularDias()">Calcular DIAS</button>
+    </div>
+    <br>
+
+    <div style="display: flex; justify-content: center " *ngIf="totalDias !== null">
+        <button nbButton status="basic"(click)="limpar()">
+            <p style="font-size: x-large; font-weight: 600; color: red;">Total de dias passados foram: {{ totalDias }} dias.</p>
+        </button>
+    </div>
+    </nb-card-body>
+</nb-card> -->
+
+<nb-card>
+    <nb-card-header>
+        <h3  style="display: flex; justify-content: center; font-size: x-large; font-weight: 600; color: cornflowerblue;">Calcular dias desde o início do ano</h3>
+    </nb-card-header>
+    <nb-card-body>
+        <form style="display: flex; flex-direction: row; justify-content: space-evenly;" (ngSubmit)="calcularDias()">
+            <div class="form-group">
+                <label for="day" style="font-size: x-large; font-weight: 600; justify-self: center;">Dia: </label>
+                <input style="font-size: x-large; font-weight: 600; justify-self: center;" type="number" class="form-control" id="day" [(ngModel)]="dia" name="day" min="1" max="31" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="month" style="font-size: x-large; font-weight: 600; justify-self: center;">Mês: </label>
+                <input style="font-size: x-large; font-weight: 600; justify-self: center;" type="number" class="form-control" id="month" [(ngModel)]="mes" name="month" min="1" max="12" required>
+            </div>
+            <br><br>
+            <button type="submit" nbButton status="primary" style="font-size: x-large; font-weight: 600; justify-self: center;">Calcular</button>
+        </form>
+
+        <br><br>
+        <div style="display: flex; justify-content: center " *ngIf="totalDias!== null">
+            <button nbButton status="basic"(click)="limpar()">
+                <p style="font-size: x-large; font-weight: 600; justify-self: center; color: blueviolet;">
+                    Desde o início do ano até {{ dia }}/{{ mes }} passaram-se {{ totalDias }} dias.
+                </p>
+            </button>
+        </div>
+        
+    </nb-card-body>
+</nb-card>
